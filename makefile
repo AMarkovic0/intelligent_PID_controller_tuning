@@ -1,21 +1,14 @@
 CC = gcc
-CFLAGS = -g -Wall -o -I .
+CFLAGS = -g -Wall -o
 LIBS = -lm
 
-CFILES = ./src/gen_alg.c main.c 
+CFILES = ./lib/gen_alg.c main.c
 OUTFILE = main
 
 all: app
 
 app:
-	$(CC) $(CFLAGS) $(OUTFILE) $(CFILES) $(LIBS)
-
-lib:
-	cd ./inc/; \
-	$(CC) -c -g $(LIBSRC); \
-	ar rs libs.a *.o; \
-	rm *.o; \
-	cd ..
+        $(CC) $(CFLAGS) $(OUTFILE) $(CFILES) $(LIBS) -I.
 
 clear:
-	rm *.o
+        rm *.o
