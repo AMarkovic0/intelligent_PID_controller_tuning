@@ -8,7 +8,7 @@ OUTFILE = main
 all: app
 
 app:
-        $(CC) $(CFLAGS) $(OUTFILE) $(CFILES) $(LIBS) -I.
+	$(CC) $(CFLAGS) $(OUTFILE) $(CFILES) $(LIBS) -I.
 
 clear:
-        rm *.o
+	rm *.o
