@@ -12,7 +12,7 @@ const int32_t GENERATION_SIZE = 300;
 const int32_t REPRODUCTION_SIZE = 30;
 const int32_t SIMULATION_SIZE = 10000;
 
-const _parameters params = {0.0f, {0,20}, 5, 0.2f};
+const _parameters params = {0.0f, {0,25}, 5, 0.2f};
 
 int main( int argc , char* argv[] )
 {
